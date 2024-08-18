@@ -33,7 +33,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.SERVER_PASSWORD }}
           script: |
-            cd ~/workspace-javascript/astro-porfolio/
+            cd ~/workspace-javascript/porfolio.dev/
             git pull
             docker-compose down
             docker-compose up -d --build
