@@ -1,34 +1,42 @@
 ---
 import ExperienceItem from "./ExperienceItem.astro"
-const EXPERIENCIE = [
-  {
-    date: "Actualmente...",
-    title: "Backend Engineer",
-    company: "Supermarket23",
-    responsibilities: [
-        "Soporte y Mantenimiento de Aplicaciones de Pago: Responsable del soporte y mejora continua de la aplicación encargada de gestionar las transacciones de pago de los usuarios.",
-        "Integración de Pasarelas de Pago: Implementación de diversas pasarelas de pago como Redsys, Revolut, Stripe, Poynt, entre otras, utilizando flujos de pago como hosted pages, card tokenization y API-based transactions.",
-        "Cumplimiento de PCI Compliance: Gestión y ejecución de pruebas para asegurar el cumplimiento con las normativas de PCI Compliance, garantizando la seguridad y fiabilidad de las transacciones.",
-        "Optimización de Procesos: Mejoramiento de la eficiencia de los flujos de pago, asegurando una experiencia de usuario fluida y segura."
-    ]
-  },
-  {
-    date: "Septiembre 2021",
-    title: "Principal Frontend Engineer",
-    company: "Naroca",
-    responsibilities:[
-      "Página web destinada a la reserva de asientos de bus. Tecnologías utilizadas: Angular y Primeng",
-    ]
-  },
+const EXPERIENCE = [
+    {
+        date: "Actualmente...",
+        title: "Backend Engineer",
+        company: "Treew Inc.",
+        responsibilities: [
+            "Integración de Pasarelas de Pago.",
+            "Integración a APIs para la prevención de fraudes.",
+            "Cumplimiento de PCI Compliance.",
+            "Optimización de Procesos.",
+            "Desarrollo de APIs RESTful.",
+            "Mantenimiento y Desarrollo del buscador de la plataforma.",
+            "Desarrollo de Herramientas de Administración.",
+            "Integración con el API de ChatGPT.",
+        ]
+    },
+    {
+        date: "Septiembre 2021",
+        title: "Principal Frontend Engineer",
+        company: "Naroca",
+        responsibilities: [
+            "Desarrollo del Sistema de Reserva de Asientos de Autobús",
+            "Diseño de Interfaces Responsivas",
+            "Validación de Flujos de Negocio",
+            "Integración de APIs",
+            "Desarrollo de Herramientas de Administración",
+        ]
+    },
 ]
 ---
 
 <ol class="relative mt-16">
-  {
-    EXPERIENCIE.map((experiencie) => (
-      <li class="">
-        <ExperienceItem {...experiencie} />
-      </li>
-    ))
-  }
+    {
+        EXPERIENCE.map((experiencie) => (
+                <li class="">
+                    <ExperienceItem {...experiencie}/>
+                </li>
+        ))
+    }
 </ol>
